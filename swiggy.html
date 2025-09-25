@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="stylesheet" href="swiggy.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="delivery">
+                <div class="time">
+                    <div>4</div>
+                    <div>MINS</div>
+                </div>
+                <div class="txt">Delivery to Other</div>
+            </div>
+            <div class="profile">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzBkMGMwYyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjU2IDQyLjY2N0EyMTMuMzMzIDIxMy4zMzMgMCAwIDEgNDY5LjMzNCAyNTZjMCAxMTcuODIxLTk1LjUxMyAyMTMuMzM0LTIxMy4zMzQgMjEzLjMzNGMtMTE3LjgyIDAtMjEzLjMzMy05NS41MTMtMjEzLjMzMy0yMTMuMzM0QzQyLjY2NyAxMzguMTggMTM4LjE4IDQyLjY2NyAyNTYgNDIuNjY3bTIxLjMzNCAyMzQuNjY3aC00Mi42NjdjLTUyLjgxNSAwLTk4LjE1OCAzMS45ODctMTE3LjcxNSA3Ny42NDhjMzAuOTQ0IDQzLjM5MSA4MS42OTIgNzEuNjg1IDEzOS4wNDggNzEuNjg1czEwOC4xMDQtMjguMjk0IDEzOS4wNDktNzEuNjg4Yy0xOS41NTctNDUuNjU4LTY0LjktNzcuNjQ1LTExNy43MTUtNzcuNjQ1TTI1NiAxMDYuNjY3Yy0zNS4zNDYgMC02NCAyOC42NTQtNjQgNjRzMjguNjU0IDY0IDY0IDY0czY0LTI4LjY1NCA2NC02NHMtMjguNjUzLTY0LTY0LTY0Ii8+PC9zdmc+" alt="Profile Picture" height="40px">
+            </div>
+        </div>
+        <br>
+        <div class="searchbox">
+            <div class="placeholder">Search for "Dry Fruits"</div>
+            <div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij48cGF0aCBmaWxsPSIjMGQwYzBjIiBkPSJNNi41IDJhNC41IDQuNSAwIDAgMSAzLjUxNSA3LjMwOGwyLjgzOSAyLjgzOWwuMDY0LjA3OGEuNS41IDAgMCAxLS42OTMuNjkzbC0uMDc5LS4wNjRsLTIuODM4LTIuODRBNC41IDQuNSAwIDEgMSA2LjUgMm0wIDFhMy41IDMuNSAwIDEgMCAwIDdhMy41IDMuNSAwIDAgMCAwLTciLz48L3N2Zz4=" alt="Search" height="20px"></div>
+        </div>
+        <br>
+        <div class="bannersection">
+            <div class="banner"><img src="data:image/webp;base64,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" alt="Banner"></div>
+            <br>
+            <div class="banneritems">
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/a03e3e9c-e8e3-49a1-8c1a-cc8070b54646_Freshcorner.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/46993b49-52ab-4b68-aa11-3726b0acf486_Indulgencecorner.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/21/d4b9e261-1b04-44bb-8dac-d14a6a47884e_Mobileselectronics.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/25/190927a6-75f9-4bb8-b249-a02eac92fe25_Cetaphil1.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/20/79ff0a53-74d4-4b7a-83e1-fb2c0ebb20d6_Groceryessentials.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/21/2a7dc59d-a232-422f-9b53-943ca2d72a21_d65afeae475e4bb5bd4f1f8da9d60503Homekitchen.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/20/e1831153-c99d-47ab-8cc0-6a6a671b18cb_c3new20.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/74c92fa5-9f72-4a52-8740-e1341756a0dd_Babycare.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/4e233377-edad-4a83-8981-0c85e36bfa13_Cleaningessentials.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/dd2a3c81-bee0-47f1-8c01-75c84fde8258_Toyscollection.png" alt="Item" height="100px"></div>
+                <div class="bitem"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_164/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/19/4db19be1-1879-405a-a371-ff5f0a80bf57_Healthwellness.png" alt="Item" height="100px"></div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/1/3/c3a6e1b3-7877-4b7e-a764-a25ab487dda8_214_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">Coca-Cola Zero Soft</div>
+                <div class="name2">Drink Can</div>
+                <br>
+                <div class="quantity">300 ml</div>
+                <div class="price">
+                    <div class="new">&#8377;34</div>
+                    <div class="old">&#8377;40</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/4/11/91c078a8-a07d-43d4-a00f-7c6724d63b74_62220_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">Jamfro Transparent</div>
+                <div class="name2">Multi Reusable....</div>
+                <br>
+                <div class="quantity">1 pack</div>
+                <div class="price">
+                    <div class="new">&#8377;49</div>
+                    <div class="old">&#8377;199</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/8/25/a6bfc853-f43d-490c-a29e-f7ff02fd2b0d_876275_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">Royal Canin Maxi</div>
+                <div class="name2">Puppy 4 kg</div>
+                <br>
+                <div class="quantity">4 kg</div>
+                <div class="price">
+                    <div class="new">&#8377;3465</div>
+                    <div class="old">&#8377;3880</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/6/2/4cf4b13b-17ac-477c-b607-b4335c181974_525613_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">boAt Stone 110</div>
+                <div class="name2">Bluetooth Speaker</div>
+                <br>
+                <div class="quantity">1 Piece</div>
+                <div class="price">
+                    <div class="new">&#8377;599</div>
+                    <div class="old">&#8377;2490</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/8/28/2d01f6d9-1b44-426f-8bb3-4626915295bc_115958_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">The Whole Truth</div>
+                <div class="name2">Unflavoured Whey..</div>
+                <br>
+                <div class="quantity">1 kg</div>
+                <div class="price">
+                    <div class="new">&#8377;2270</div>
+                    <div class="old">&#8377;2999</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/11/21/d43ccd0d-5602-4ceb-8073-cf019446e1dc_602.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">Red Bull Energy</div>
+                <div class="name2">Drink Multipack..</div>
+                <br>
+                <div class="quantity">4 pieces</div>
+                <div class="price">
+                    <div class="new">&#8377;432</div>
+                    <div class="old">&#8377;480</div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/4/3/00ea7485-9b8b-4a55-b617-574565afc649_127739_1.png" alt="Product"></div>
+                <div class="delivery_time">4 MINS</div>
+                <div class="name1">Jamfro Premium</div>
+                <div class="name2">Transparent Pencil..</div>
+                <br>
+                <div class="quantity">1 piece</div>
+                <div class="price">
+                    <div class="new">&#8377;99</div>
+                    <div class="old">&#8377;399</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+            <div class="row_heading">Hot deals</div>
+            <br>
+            <div class="row">
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/8/5/77e61fae-297d-4dfb-a54b-ea78ca91c331_3845_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">Kurkure Namkeen</div>
+                    <div class="name2">Masala Munch</div>
+                    <br>
+                    <div class="quantity">75 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;18</div>
+                        <div class="old">&#8377;20</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/12/22/21d27630-5052-4f6a-b6bb-57f852c677c7_720676_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">Amul Rabri</div>
+                    <div class="name2"></div>
+                    <br>
+                    <div class="quantity">85 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;24</div>
+                        <div class="old">&#8377;25</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/9/21/3d0044b3-8274-4d3e-b5cb-81ff1dc1d3ea_3825_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">MAGGI 2-Minute</div>
+                    <div class="name2">Instant Noodles,..</div>
+                    <br>
+                    <div class="quantity">840 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;146</div>
+                        <div class="old">&#8377;180</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2024/8/1/a19b918c-0bad-4c0f-b751-48a8393e4bb0_673_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">Lays's India's Magic</div>
+                    <div class="name2">Masala Chips</div>
+                    <br>
+                    <div class="quantity">48 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;18</div>
+                        <div class="old">&#8377;20</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/6/9/d3bada2d-ac45-4de3-941f-c7be1e1188ff_3915_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">Amul Masti Dahi</div>
+                    <div class="name2"></div>
+                    <br>
+                    <div class="quantity">390 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;35</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/1/25/72ecc69b-d682-4d18-af6d-93976914fadf_242_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">Tata Salt, Iodised</div>
+                    <div class="name2">Namak, Vacuum</div>
+                    <br>
+                    <div class="quantity">1 kg</div>
+                    <div class="price">
+                        <div class="new">&#8377;27</div>
+                        <div class="old">&#8377;30</div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/5/10/1a7eb2d6-cfdb-4243-9de7-feaa3c1992e2_82_1.png" alt="Product"></div>
+                    <div class="delivery_time">4 MINS</div>
+                    <div class="name1">MAGGI 2-Minute</div>
+                    <div class="name2">Instant Noodles,...</div>
+                    <br>
+                    <div class="quantity">280 g</div>
+                    <div class="price">
+                        <div class="new">&#8377;56</div>
+                        <div class="old">&#8377;60</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="adds">
+            <div class="add"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_656/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/2/90b449e7-2dfc-4863-b5eb-1a159f0c28c1_48328x61StripBanner.png" alt="Add"></div>
+            <div class="add"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_656/MERCHANDISING_BANNERS/IMAGES/MERCH/2025/9/10/2436d307-5a79-4dd1-9ea1-59c8fcac76b2_Stripbanner328x61All2.png" alt="Add"></div>
+        </div>
+        <br>
+        <div class="section">
+            <div class="row_heading">Grocery & Kitchen</div>
+            <br>
+            <div class="row">
+                <div class="item">
+                    <div class="image"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200/NI_CATALOG/IMAGES/CIW/2025/9/19/1d02b229-f988-413a-bfb4-ba16aaea132f_7bd1dcf3-47bb-4db9-ba00-21ed735b05ee" alt="Product"></div>
+                    <br>
+                    <div class="name1">Fresh Vegetables</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
